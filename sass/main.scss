@@ -1,0 +1,257 @@
+//Globals
+$darkGray: #757472;
+$lightGray: #8D8D8D;
+$blueGray: #939DAE;
+$sand: #BEBCA4;
+$lightSand: #B8B6A2;
+
+body {
+	font-family: 'Work Sans', sans-serif;
+}
+
+.rowNoMargin {
+	margin-bottom: 0;
+}
+
+h3, h4 {
+	font-family: 'Bitter', serif;
+}
+
+
+//Header
+.headerImg {
+	margin: 0 auto;
+	max-width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	height: 100vh;
+	img {
+		align-self: center;
+		max-height: 100vh;
+		margin-top: -2rem;
+	}
+	button {
+		padding-bottom: 0;
+		display: flex;
+		border: none;
+		align-content: center;
+		background-color: transparent;
+		align-self: center;
+		max-width: 30%;
+		h6 {
+			margin: 0;
+			font-size: 1.5rem;
+			font-family: 'Nothing You Could Do', cursive;
+			display: inline-block;
+			align-self: center;
+		}
+		i {
+			align-self: center;
+			opacity: .75;
+		}
+	}
+}
+// Fixed Nav
+#stickyNav {
+}
+
+#menuLogo {
+	margin-top: 0;
+	img {
+		max-width: 75%;
+	}
+}
+.menuInclude {
+	padding-right: 0 !important;
+}
+
+.navContainer {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: 100vh;
+	text-align: center !important;
+}
+
+.navEmail {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 5px;
+	align-self: center;
+	position: absolute;
+	bottom: 0;
+}
+
+.icons {
+	img:hover {
+		opacity: .75;
+	}
+}
+
+#navList {
+	ul {
+		li {
+			font-size: 1.25rem;
+			cursor: pointer;
+		}
+	}
+}
+
+.resume {
+	font-size: 1.15rem;
+	color: black;
+	text-decoration: none;
+}
+
+.resume:hover {
+	text-decoration: underline;
+}
+// Main container
+
+
+//About
+.mainContainer {
+	padding: 0 !important;
+	display: flex;
+	flex-direction: column;
+}
+
+.aboutContainer {
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+	background-color: $lightSand;
+	position: relative;
+		img {
+			max-width: 20%;
+			position: absolute;
+			bottom: 0;
+		}
+}
+.aboutImg {
+	width: 25%;
+}
+.aboutMe {
+	margin-right: 3rem;
+	width: 35%;
+}
+.techDiv {
+	max-width: 100%;
+	img {
+		position: relative;
+		max-width: 80%;
+	}
+}
+
+.enjoyList {
+	max-width: 35%;
+	// float: right;
+	ul {
+		margin-top: .25rem;
+		li {
+			font-size: 1rem;
+		}
+	}
+}
+//Articles Photos
+.articlesPhotos {
+	display: flex;
+	flex-direction: row;
+	p {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+	ul {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+	h3 {
+		text-align: center;
+	}
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	a:hover {
+		text-decoration: underline
+	}
+
+}
+
+.articles {
+	width: 50%;
+	background-color: $blueGray;
+}
+
+.photos {
+	width: 50%;
+	background-color: $darkGray;
+}
+
+//Portfolio
+.portfolioContainer {
+	display: flex;
+	flex-direction: row;
+	background-color: $lightSand;
+}
+
+.gridContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 65%;
+	max-height: 550px;
+	margin: 2rem;
+	justify-content: space-around;
+	// max-height: 100%;
+}
+
+.photoGrid {
+	cursor: pointer;
+	max-width: 40%;
+	height: 30%;
+	display: flex;
+	transition: all 300ms ease-in-out;
+		img {
+			max-width: 100%;
+		}
+}
+
+.photoGrid:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.portText {
+	width: 35%;
+}
+
+.githubLink {
+	display: block;
+}
+
+//footer
+
+.footer {
+	background-color: $darkGray;
+	height: 10rem;
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+		a {
+			align-self: center;
+			font-size: 3rem;
+			color: white;
+		}
+}
+
+
+
+
+
+
+
+
+

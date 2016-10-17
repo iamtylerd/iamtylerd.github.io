@@ -1,0 +1,79 @@
+<div class="headerInclude">
+    <div ng-include="'partials/header.html'"></div>
+</div>
+<div class="row rowNoMargin">
+    <div class="menuInclude col s2" id="">
+        <div ng-include="'partials/nav.html'"></div>
+    </div>
+    <div class="mainContainer col s10">
+
+			<div class="aboutContainer" id="about">
+					<div class="aboutImg">
+						<img src="app/assets/about.png"/>
+					</div>
+					<div class="aboutMe">
+						<h4>About Me</h4>
+						<p>I am a full stack developer with an emphasis on Node.js and Angular.  I like to work with sass, pug templating, TDD, modular code, and I tend to self document heavily.  You will see below, some of the technologies that I enjoy working with.</p>
+						<div class="techDiv">
+							<img src="app/assets/tech.png"/>
+						</div>
+					</div>
+						<div class="enjoyList">
+							<h4>Things I enjoy</h4>
+							<ul>
+								<li>Sports (I play in a wood bat baseball league and a weekly basketball league)</li>
+								<li>Movies/Tv</li>
+								<li>Technology</li>
+								<li>Food</li>
+								<li>Traveling</li>
+								<li>Video Games</li>
+								<li>Power Lifting</li>
+								<li>Food</li>
+								<li>Beer</li>
+								<li>Learning thing on Youtube</li>
+								<li>and Food</li>
+								<li>.....and Beer</li>
+							</ul>
+					</div>
+			</div>
+			<div class="articlesPhotos" id="articles">
+				<div class="articles">
+					<h3>Articles</h3>
+					<p>I like to write when I get the chance.  You will find below some of the articles I have written.  I tend to write about things I am passionate about like programming, weightlifting, food, sports, and dieting. </p>
+					<ul>
+						<li><a target="_blank" href="https://gist.github.com/iamtylerd/44b48aab29304eff34c6e2027e8e6d83">Simple Firebase Security</a>
+						<li><a target="_blank" href="http://dungeonsanddeadlifts.com/2015/11/05/a-beginners-guide-to-training/">A Beginner's Guide To Training</a>
+						<li><a target="_blank" href="http://dungeonsanddeadlifts.com/2015/10/22/lets-eat/">Lets Eat</a>
+					</ul>
+				</div>
+				<div class="photos">
+					<h3>Photography</h3>
+					<p>Before I started programming I was a photographer.  I love to create and take photos whenver I get the chance.  I have shot weddings, events, and I have worked for an agency.  I also enjoy videography.  I have 10 years of experience with photography, Adobe Photoshop, Sony Vegas, and Adobe Premiere. </p>
+					<ul>
+						<li><a target="_blank" href="https://www.behance.net/tylerdaniel">Photos on Behance</a>
+						<li><a target="_blank" href="https://www.youtube.com/user/tad2q/videos">Videos on Youtube</a>
+					</ul>
+				</div>
+			</div>
+			<div class="portfolioContainer" id="portfolio">
+				<div class="gridContainer">
+					<div class="photoGrid" ng-repeat="project in projects">
+						<img ng-src={{project.img}} ng-click="displayInfo(project)"/>
+					</div>
+				</div>
+				<div class="portText">
+					<h3>Portfolio Text</h3>
+						<h2>{{projectName}}</h2>
+						<blockquote>
+						<p>{{projectDescription}}</p>
+					</blockquote>
+					<h6>{{projectFeatures}}</h6>
+					<a class="githubLink" ng-href={{projectGithubLink}}>{{github}}</a>
+					<a ng-href={{projectDeployedLink}}>{{deployed}}</a>
+				</div>
+			</div>
+    </div>
+			<div class="footer col s10 right" id="contact">
+				<a href="mailto:tyler@tylerdaniel.com">tyler@tylerdaniel.com</a>
+			</div>
+</div>
